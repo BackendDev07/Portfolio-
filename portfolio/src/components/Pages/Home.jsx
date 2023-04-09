@@ -6,7 +6,9 @@ function Home() {
   return (
     <div>
         <Page>
-            
+          <Container>
+
+          </Container>
         </Page>
     </div>
   )
@@ -14,7 +16,10 @@ function Home() {
 
 export default Home
 
-
-const Container = styled.div`
-    
+ 
+export const Container = styled.div`
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;   
 `

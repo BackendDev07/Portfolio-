@@ -1,14 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 import Smile from '../../assets/icons/Smile'
+import { useNavigate } from 'react-router-dom'
 
 function Login() {
+    const navigate = useNavigate()
+    const handleContinuie = () => {
+        navigate('/home')
+    }
   return (
     <LoginPage>
         <Box>
             <Smile/>
             <Text>Welcome to my portfolio site</Text>
-            <Btn>Continiue</Btn>
+            <Btn onClick={handleContinuie}>Continiue</Btn>
         </Box>
     </LoginPage>
   )
